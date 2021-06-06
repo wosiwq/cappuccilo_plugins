@@ -59,9 +59,14 @@ index_da='1'#34: deviantArt (Last Updated: July 2017) 落后... - Caught up 
 index_pawoo='0'#35: Pawoo.net (On Hold) 落后... - Automatic updater broken
 index_madokami='0'#36: Madokami (Manga) (Last Updated: November 2018) 相当完整
 index_mangadex='0'#37: MangaDex (Continuously Updated) 相当完整 - New chapters are added every few minutes.
+index_hmisc_ehentai = '0'#38: H-Misc (ehentai)
+index_artStation = '0' #39: ArtStation
+index_furAffinity = '0' #40: FurAffinity
+index_twitter = '0' #41: Twitter
+index_furry= '0' #42: Furry Network
 
 #生成bitmask
-db_bitmask = int(index_mangadex+index_madokami+index_pawoo+index_da+index_portalgraphics+index_bcycosplay+index_bcyillust+index_idolcomplex+index_e621+index_animepictures+index_sankaku+index_konachan+index_gelbooru+index_shows+index_movies+index_hanime+index_anime+index_medibang+index_2dmarket+index_hmisc+index_fakku+index_shutterstock+index_reserved+index_animeop+index_yandere+index_nijie+index_drawr+index_danbooru+index_seigaillust+index_anime+index_pixivhistorical+index_pixiv+index_ddbsamples+index_ddbobjects+index_hcg+index_hanime+index_hmags,2)
+db_bitmask = int(index_furry+index_twitter+index_furAffinity+index_artStation+index_hmisc_ehentai+index_mangadex+index_madokami+index_pawoo+index_da+index_portalgraphics+index_bcycosplay+index_bcyillust+index_idolcomplex+index_e621+index_animepictures+index_sankaku+index_konachan+index_gelbooru+index_shows+index_movies+index_hanime+index_anime+index_medibang+index_2dmarket+index_hmisc+index_fakku+index_shutterstock+index_reserved+index_animeop+index_yandere+index_nijie+index_drawr+index_danbooru+index_seigaillust+index_anime+index_pixivhistorical+index_pixiv+index_ddbsamples+index_ddbobjects+index_hcg+index_hanime+index_hmags,2)
 
 def get_pic(address):
     return requests.get(address,timeout=20).content
